@@ -22,6 +22,7 @@ I'm happy with the end result. While I didn't go above and beyond I'm satisfied 
 
 Thanks for taking the time to look!
 Niall  
+
     
 ## Spec:
 - Display a list of movies, each showing their title, genres and poster image.
