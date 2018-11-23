@@ -1,44 +1,31 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## How to run
+TO run this project, clone to a local drive and then "run npm install" followed by "npm start"
 
-## Available Scripts
+## Brief
+An application that utilises TMDB APIs to show a now playing list of movies that can be filtered on by rating and/or genre
 
-In the project directory, you can run:
+## Notes
+This was a fun task!
 
-### `npm start`
+Although I don't have much react experience (probably very evident from the code), I thought it would be a good opportunity to try a new 
+framework because a) it shows a bit of initiative and b) even if it's not well received, at least it's a good platform for me to do a little bit of practice.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+A few points about the finished product
+-   I was conscious not to over engineer the application. There's an abundance of APIs available from TMDB. In some ways, 
+    you could spend weeks replicating IMDB or MetaCritic with a bunch of cool features. I may add build on this in future but for now I wanted to keep it simple!
+-   I didn't spend too much time on the visuals, instead I used Material-UI framework for layout and the checkbox and slider components. 
+    I'm familiar with Material from other projects but it may have been overkill here as it introduces a host of additional components that over complicated the app in the end.
+-   I tried to keep the components (slider, dropdown, movie item) as generic as possible and keep the logic in the calling class. The idea here is that we might want to re-use 
+    these components in the future and we want them decoupled from application logic.
+    
+I'm happy with the end result. While I didn't go above and beyond I'm satisfied that I achieved what was asked in the spec below. 
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Thanks for taking the time to look!
+Niall  
+    
+## Spec:
+## Display a list of movies, each showing their title, genres and poster image.
+## The movies should be ordered by popularity (most popular first - popularity property).
+## Movies should be filterable by multiple genres, the user should have the ability to toggle movies depending on all of its assigned genres. For example if 'Action' and 'Drama' genres are selected listed movies must have both 'Action' and 'Drama' genres.
+## Movies should also be filterable by their rating (vote_average property). i.e If rating was set to 5, you would expect to see all movies with a rating of 5 or higher.
+## The input API's should only be called once.
